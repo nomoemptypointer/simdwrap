@@ -1,6 +1,6 @@
 # simdwrap
 
-A small C99 library for SIMD math operations (add, multiply, FMA) with runtime backend selection.
+A small C11 library for SIMD math operations (add, multiply, FMA) with runtime backend selection.
 
 ## Overview
 
