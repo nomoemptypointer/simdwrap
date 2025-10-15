@@ -10,7 +10,11 @@ add_library(simdwrap STATIC
 )
 
 # Include directories for this library
-target_include_directories(simdwrap PUBLIC include)
+target_include_directories(simdwrap
+    PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+        $<INSTALL_INTERFACE:include>
+)
 
 # Compiler-specific optimization flags
 if (CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
